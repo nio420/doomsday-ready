@@ -1,6 +1,3 @@
-cd /d/doomsday-ready
-
-cat << 'EOF' > README.md
 # Doomsday Ready
 
 A full-stack movie watch-list, prerequisite dependency tracker, and cinema/screening planner built with **Next.js (TypeScript)**, **Node.js**, **Prisma**, **PostgreSQL (Neon + Docker)**, and **Docker Compose**.
