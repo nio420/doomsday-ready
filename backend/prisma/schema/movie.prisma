@@ -1,0 +1,13 @@
+model Movie {
+  id             String   @id @default(cuid())
+  title          String   @unique
+  releaseYear    Int
+  runtimeMinutes Int
+  watched        Boolean  @default(false)
+
+  prerequisites  Movie[]  @relation("MoviePrerequisites")
+  prerequisiteFor Movie[] @relation("MoviePrerequisites")
+
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
