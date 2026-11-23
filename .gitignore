@@ -1,8 +1,14 @@
-.env
-.env.*
 !.env.example
 node_modules/
 .next/
 dist/
 build/
 coverage/
+
+# Environment variables & secrets (added by GitHub Guardian)
+*.env
+!.env.sample
+.envrc
+.venv/
+venv/
+config.bat
